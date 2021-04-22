@@ -354,10 +354,22 @@
 
   <!-- Resources -->
   <h1>Hello world angular</h1>
-  {{name}}
-<p>Working ...</p>
-<input type="text" (keyup)="onPress($event)" >
-<p>{{result}}</p>
+    {{name}}
+      <p>Working ...</p>
+        <input type="text" (keyup)="onPress($event)" >
+          <p>{{result}}</p>
+          <button (click)="doSth()" >DO sth</button>
+          <p>Angular form</p>
+          <input type="text" [(ngModel)]="username" name="username"  >
+          <p>{{username}}</p>
+          
+          <p>My Tasks:</p>
+          <ul>
+            <li *ngFor="let task of tasks">
+              {{ task }}
+            </li>
+          </ul>
+
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
 
