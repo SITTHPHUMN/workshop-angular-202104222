@@ -6,16 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo01';
-  name = 'SIITHIPHUM.N';
-  result = "...";
-  data = ""
-  username = ""
+  name = 'somkiat';
+  result = '...';
+  username = '';
   tasks = ['Task 1', 'Task 2'];
 
   doSth() {
-    console.log("Clicked ...");
-    this.result = "Change from clicked !!";
+    console.log('Clicked ...');
+    this.result = 'Change from clicked !!';
   }
 
   onPress(event: any) {
